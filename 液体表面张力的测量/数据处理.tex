@@ -1,0 +1,77 @@
+\documentclass[12pt]{ctexart}
+\usepackage{geometry}
+\usepackage{caption}
+\usepackage{multirow}
+\usepackage{array}
+\usepackage{amsmath}
+\newcolumntype{C}[1]{>{\centering\arraybackslash}p{#1}}
+\geometry{a4paper,left=1.5cm,right=1.5cm,top=2cm,bottom=2cm}
+\captionsetup[table]{labelsep=space,justification=centering}
+\begin{document}
+\begin{table}[ht]
+\centering
+\caption*{表1 \hspace{3em}力敏传感器定标实验测量}
+\renewcommand\arraystretch{1.1}
+\begin{tabular}{C{7em}|*{8}{|C{3em}}}
+\multicolumn{9}{l}{$U=K\cdot F$} \\
+\hline
+\hline
+次数 & 1 & 2 & 3 & 4 & 5 & 6 & 7 & 8 \\
+\hline
+砝码质量$m$/g & 0.000 & 0.500 & 1.000 & 1.500 & 2.000 & 2.500 & 3.000 & 3.500 \\
+\hline
+砝码重量$F$/N &  &  &  &  &  &  &  &  \\
+\hline
+电压$U$/mV  &  &  &  &  &  &  &  &  \\
+\hline
+\hline
+\end{tabular}
+\end{table}
+\begin{table}[ht]
+\centering
+\caption*{表2 \hspace{3em}液膜破裂前后电压表测量}
+\renewcommand\arraystretch{1.1}
+\begin{tabular}{C{8em}|*{7}{|C{3.5em}}}
+\multicolumn{8}{l}{$\sigma=\dfrac{\overline{\Delta U}}{\pi (D_1+D_2)K}$} \\
+\multicolumn{8}{l}{室温$T=\underline{\hspace{3em}}^\circ \text{C}$，吊环直径$D_1=3.310$cm，$D_2=3.496$cm，$\sigma_{\text{公}}(T)=\underline{\hspace{3em}}$N/m} \\
+\hline
+\hline
+次数 & 1 & 2 & 3 & 4 & 5 & 6 & \multirow{3}{*}{\begin{tabular}[c]{@{}c@{}} 平均值 \end{tabular}} \\
+\cline{1-7}
+破膜前$U_1$/mV &  &  &  &  &  &  &  \\
+\cline{1-7}
+破膜后$U_2$/mV &  &  &  &  &  &  &  \\
+\hline
+$(U_1-U_2)$/mV &  &  &  &  &  &  &  \\
+\hline
+\hline
+\end{tabular}
+\end{table}
+\begin{table}[ht]
+\centering
+\caption*{表3 \hspace{3em}管内液柱高度$h$和毛细管内径$d$的测量}
+\renewcommand\arraystretch{1.1}
+\begin{tabular}{C{4em}|*{6}{|C{3.5em}}}
+\multicolumn{7}{l}{ $\sigma = \dfrac{1}{4} \rho g \bar{d}\left(\bar{h}+\dfrac{\bar{d}}{6}\right)$ } \\
+\multicolumn{7}{l}{室温$T=\underline{\hspace{3em}}^\circ \text{C}$，$g_{\text{武汉}}=9.79338$m/$\text{s}^2$，$\rho_{\text{水}}(T)=\underline{\hspace{3em}}$kg/$\text{m}^3$} \\
+\hline
+\hline
+次数 & 1 & 2 & 3 & 4 & 5 & \\
+\hline
+$y_1$/mm &  &  &  &  &  & \multirow{2}{*}{\begin{tabular}[c]{@{}c@{}} 平均值 \end{tabular}} \\
+\cline{1-6}
+$y_2$/mm &  &  &  &  &  & \\
+\hline
+$h$/mm &  &  &  &  &  & \\
+\hline
+\hline
+$x_1$/mm &  &  &  &  &  & \multirow{2}{*}{\begin{tabular}[c]{@{}c@{}} 平均值 \end{tabular}} \\
+\cline{1-6}
+$x_2$/mm &  &  &  &  &  & \\
+\hline
+$d$/mm &  &  &  &  &  & \\
+\hline
+\hline
+\end{tabular}
+\end{table}
+\end{document}

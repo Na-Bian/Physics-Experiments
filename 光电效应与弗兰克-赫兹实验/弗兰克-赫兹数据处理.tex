@@ -1,0 +1,49 @@
+\documentclass{ctexart}
+\usepackage{geometry}
+\usepackage{caption}
+\usepackage{multirow}
+\usepackage{array}
+\usepackage{amsmath}
+\newcolumntype{C}[1]{>{\centering\arraybackslash}p{#1}}
+\geometry{a4paper,left=1.5cm,right=1.5cm,top=2cm,bottom=2cm}
+\captionsetup[table]{labelsep=space,justification=centering}
+\begin{document}
+\begin{table}[ht]
+\centering
+\caption*{表2 \hspace{3em}各峰所对应的栅极电压$V_{G2K}$}
+\renewcommand\arraystretch{1.1}
+\begin{tabular}{C{5em}|C{4em}|C{4em}|C{4em}|C{4em}|C{4em}}
+\hline
+\hline
+峰 & 1 & 2 & 3 & 4 & 5 \\
+\hline
+$V_{G2K}$(V) &  &  &  &  &  \\
+\hline
+\hline
+峰 & 6 & 7 & 8 & 9 & 10 \\
+\hline
+$V_{G2K}$(V) &  &  &  &  &  \\
+\hline
+\hline
+\end{tabular}
+\end{table}
+\begin{table}[ht]
+\centering
+\caption*{表3 \hspace{3em}$V_0$的估计值$\Delta V_{G2K}$}
+\renewcommand\arraystretch{1.1}
+\begin{tabular}{C{5em}|C{4em}|C{4em}|C{4em}|C{4em}|C{4em}}
+\hline
+\hline
+$\Delta V_{G2K}$ & 1 & 2 & 3 & 4 & 5 \\
+\hline
+$\hat{V_0}$(V) &  &  &  &  &  \\
+\hline
+\hline
+$\Delta V_{G2K}$ & 6 & 7 & 8 & 9 &  \\
+\cline{1-5}
+$\hat{V_0}$(V) &  &  &  &  &  \\
+\hline
+\hline
+\end{tabular}
+\end{table}
+\end{document}

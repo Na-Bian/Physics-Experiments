@@ -1,0 +1,158 @@
+\documentclass{ctexart}
+\usepackage{geometry}
+\usepackage{caption}
+\usepackage{multirow}
+\usepackage{array}
+\usepackage{amsmath}
+\newcolumntype{C}[1]{>{\centering\arraybackslash}p{#1}}
+\geometry{a4paper,left=1.5cm,right=1.5cm,top=2cm,bottom=2cm}
+\captionsetup[table]{labelsep=space,justification=centering}
+\begin{document}
+\begin{table}[ht]
+\centering
+\caption*{表1 \hspace{3em}用零电流法测定普朗克常数$h$和“红限”频率$\nu_0$}
+\renewcommand\arraystretch{1.1}
+\begin{tabular}{C{5em}|C{4em}|C{5em}|C{5em}|C{5em}|C{5em}|C{5em}}
+	\multicolumn{7}{l}{光阑孔$\Phi=4\text{mm}$} \\
+	\hline
+	\hline
+	\multicolumn{2}{c|}{波长$\lambda(\text{nm})$} & 365 & 405 & 436 & 546 & 577 \\
+	\hline
+	\multicolumn{2}{c|}{频率$\nu(\times 10^{14}\text{Hz})$} & 8.214 & 7.408 & 6.879 & 5.490 & 5.196 \\
+	\hline
+	\hline
+	\multirow{5}{*}{\begin{tabular}[c]{@{}c@{}}截止电压\\$U_s(\text{V})$\end{tabular}} & 1 &  &  &  &  & \\
+	\cline{2-7}
+	& 2 &  &  &  &  & \\
+	\cline{2-7}
+	& 3 &  &  &  &  & \\
+	\cline{2-7}
+	& 4 &  &  &  &  & \\
+	\cline{2-7}
+	& 平均值 &  &  &  &  & \\
+	\hline
+	\hline
+\end{tabular}
+\end{table}
+\begin{table}[ht]
+\centering
+\caption*{表2 \hspace{3em}光电管的伏安特性$I-U$关系数据}
+\renewcommand\arraystretch{1.1}
+\begin{tabular}{C{6em}*{9}{|C{2em}}}
+	\multicolumn{10}{l}{波长$\lambda=\underline{\hspace{3em}}$nm，光阑孔$\Phi=\underline{\hspace{3em}}$mm} \\
+	\hline
+	\hline
+	$U_{AK}(\text{V})$ & $-4.0$ & $-3.5$ & $-3.0$ & $-2.5$ & $-2.0$ & $-1.5$ & $-1.0$ & $-0.5$ & 0.0 \\
+	\cline{1-10}
+	$I(\times 10^{-13}\text{A})$ &  &  &  &  &  &  &  &  & \\
+	\hline
+	\hline
+	$U_{AK}(\text{V})$ & 1.0 & 2.0 & 3.0 & 4.0 & \multicolumn{5}{c}{} \\
+	\cline{1-5}
+	$I(\times 10^{-12}\text{A})$ &  &  &  &  & \multicolumn{5}{c}{} \\
+	\hline
+	\hline
+	$U_{AK}(\text{V})$ & 5.0 & 6.0 & 7.0 & 8.0 & 9.0 & 10.0 & 11.0 & \multicolumn{2}{c}{}\\
+	\cline{1-8}
+	$I(\times 10^{-11}\text{A})$ &  &  &  &  &  &  &  & \multicolumn{2}{c}{}\\
+	\hline
+	\hline
+	$U_{AK}(\text{V})$ & 12.0 & 13.0 & 14.0 & 15.0 & 16.5 & 18.0 & 19.5 & \multicolumn{2}{c}{} \\
+	\cline{1-8}
+	$I(\times 10^{-11}\text{A})$ &  &  &  &  &  &  &  &  \multicolumn{2}{c}{}\\
+	\hline
+	\hline
+	$U_{AK}(\text{V})$ & 21.0 & 22.5 & 24.0 & 25.5 & 27.0 & 28.5 & 30.0 &  \multicolumn{2}{c}{} \\
+	\cline{1-8}
+	$I(\times 10^{-11}\text{A})$ &  &  &  &  &  &  &  &  \multicolumn{2}{c}{}\\
+	\hline
+	\hline
+\end{tabular}
+\end{table}
+\begin{table}[ht]
+\centering
+\caption*{表3 \hspace{3em}$I_m-P$关系数据}
+\renewcommand\arraystretch{1.1}
+\begin{tabular}{C{6em}|C{10em}|C{5em}|C{5em}|C{5em}}
+	\hline
+	\hline
+	\multirow{5}{*}{\begin{tabular}[c]{@{}c@{}}436nm\end{tabular}} & 光阑孔$\Phi$ & 2mm & 4mm & 8mm \\
+	\cline{2-5}
+	 & $I(\times 10^{-10}\text{A})$ &  &  & \\
+	\cline{2-5}
+	 & $I(\times 10^{-10}\text{A})$ &  &  & \\
+	\cline{2-5}
+	 & $I(\times 10^{-10}\text{A})$ &  &  & \\
+	\cline{2-5}
+	 & $I$的平均值 &  &  & \\
+	\hline
+	\hline
+	\multirow{5}{*}{\begin{tabular}[c]{@{}c@{}}546nm\end{tabular}} & 光阑孔$\Phi$ & 2mm & 4mm & 8mm \\
+	\cline{2-5}
+	 & $I(\times 10^{-10}\text{A})$ &  &  & \\
+	\cline{2-5}
+	 & $I(\times 10^{-10}\text{A})$ &  &  & \\
+	\cline{2-5}
+	 & $I(\times 10^{-10}\text{A})$ &  &  & \\
+	\cline{2-5}
+	 & $I$的平均值 &  &  & \\
+	\hline
+	\hline
+\end{tabular}
+\end{table}
+\begin{table}[ht]
+\centering
+\caption*{表1 \hspace{3em}汞原子第一激发电位的测量}
+\renewcommand\arraystretch{1.1}
+\begin{tabular}{C{4em}*{13}{|C{2em}}}
+	\multicolumn{14}{l}{$V_F=\underline{\hspace{3em}}\text{V}$，$V_{G1K}=\underline{\hspace{3em}}\text{V}$，$V_{G2P}=\underline{\hspace{3em}}\text{V}$，温度$t=\underline{\hspace{3em}}^{\circ}\text{C}$} \\
+	\hline
+	\hline
+	$V_{G2K}(\text{V})$ & 0.0 & 1.0 & 2.0 & 3.0 & 4.0 & 4.5 & 5.0 & 5.5 & 6.0 & 6.5 & 7.0 & 7.5 & 8.0 \\
+	\hline
+	$I_P(\text{nA})$ &  &  &  &  &  &  &  &  &  &  &  &  & \\
+	\hline
+	\hline
+	$V_{G2K}(\text{V})$ & 8.5 & 9.0 & 9.5 & 10.0 & 10.5 & 11.0 & 11.5 & 12.0 & 12.5 & 13.0 & 13.5 & 14.0 & 14.5 \\
+	\hline
+	$I_P(\text{nA})$ &  &  &  &  &  &  &  &  &  &  &  &  & \\
+	\hline
+	\hline
+	$V_{G2K}(\text{V})$ & 15.0 & 15.5 & 16.0 & 16.5 & 17.0 & 17.5 & 18.0 & 18.5 & 19.0 & 19.5 & 20.0 & 20.5 & 21.0 \\
+	\hline
+	$I_P(\text{nA})$ &  &  &  &  &  &  &  &  &  &  &  &  & \\
+	\hline
+	\hline
+	$V_{G2K}(\text{V})$ & 21.5 & 22.0 & 22.5 & 23.0 & 23.5 & 24.0 & 24.5 & 25.0 & 25.5 & 26.0 & 26.5 & 27.0 & 27.5 \\
+	\hline
+	$I_P(\text{nA})$ &  &  &  &  &  &  &  &  &  &  &  &  & \\
+	\hline
+	\hline
+	$V_{G2K}(\text{V})$ & 28.0 & 28.5 & 29.0 & 29.5 & 30.0 & 30.5 & 31.0 & 31.5 & 32.0 & 32.5 & 33.0 & 33.5 & 34.0 \\
+	\hline
+	$I_P(\text{nA})$ &  &  &  &  &  &  &  &  &  &  &  &  & \\
+	\hline
+	\hline
+	$V_{G2K}(\text{V})$ & 34.5 & 35.0 & 35.5 & 36.0 & 36.5 & 37.0 & 37.5 & 38.0 & 38.5 & 39.0 & 39.5 & 40.0 & 40.5 \\
+	\hline
+	$I_P(\text{nA})$ &  &  &  &  &  &  &  &  &  &  &  &  & \\
+	\hline
+	\hline
+	$V_{G2K}(\text{V})$ & 41.0 & 41.5 & 42.0 & 42.5 & 43.0 & 43.5 & 44.0 & 44.5 & 45.0 & 45.5 & 46.0 & 46.5 & 47.0 \\
+	\hline
+	$I_P(\text{nA})$ &  &  &  &  &  &  &  &  &  &  &  &  & \\
+	\hline
+	\hline
+	$V_{G2K}(\text{V})$ & 47.5 & 48.0 & 48.5 & 49.0 & 49.5 & 50.0 & 50.5 & 51.0 & 51.5 & 52.0 & 52.5 & 53.0 & 53.5 \\
+	\hline
+	$I_P(\text{nA})$ &  &  &  &  &  &  &  &  &  &  &  &  & \\
+	\hline
+	\hline
+	$V_{G2K}(\text{V})$ & 54.0 & 54.5 & 55.0 & 55.5 & 56.0 & 56.5 & 57.0 & 57.5 & 58.0 & 58.5 & 59.0 & 59.5 & 60.0 \\
+	\hline
+	$I_P(\text{nA})$ &  &  &  &  &  &  &  &  &  &  &  &  & \\
+	\hline
+	\hline
+\end{tabular}
+\end{table}
+\end{document}

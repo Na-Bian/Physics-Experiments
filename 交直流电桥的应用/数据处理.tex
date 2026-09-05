@@ -1,0 +1,105 @@
+\documentclass{ctexart}
+\usepackage{geometry}
+\usepackage{caption}
+\usepackage{multirow}
+\usepackage{array}
+\usepackage{amsmath}
+\newcolumntype{C}[1]{>{\centering\arraybackslash}p{#1}}
+\geometry{a4paper,left=1.5cm,right=1.5cm,top=2cm,bottom=2cm}
+\captionsetup[table]{labelsep=space,justification=centering}
+\begin{document}
+\begin{table}[ht]
+\centering
+\caption*{表1 \hspace{3em}平衡电桥法测量室温下Cu50电阻}
+\renewcommand\arraystretch{1.1}
+\begin{tabular}{C{5em}|C{4em}|C{4em}|C{4em}|C{4em}|C{4em}}
+	\hline
+	\hline
+	\multirow{2}{*}{\begin{tabular}[c]{@{}c@{}}电源电压\\$U_s(\text{V})$\end{tabular}} & \multirow{2}{*}{\begin{tabular}[c]{@{}c@{}}温度\\$t(^{\circ}\text{C})$\end{tabular}} & \multirow{2}{*}{\begin{tabular}[c]{@{}c@{}}$R_a(\Omega)$\end{tabular}} & \multirow{2}{*}{\begin{tabular}[c]{@{}c@{}}$R_b(\Omega)$\end{tabular}} & \multirow{2}{*}{\begin{tabular}[c]{@{}c@{}}$R_n(\Omega)$\end{tabular}} & \multirow{2}{*}{\begin{tabular}[c]{@{}c@{}}$R_x(\Omega)$\end{tabular}} \\
+	 &  &  &  &  & \\
+	\hline
+	\hline
+	 &  &  &  &  & \\
+	\hline
+	\hline
+\end{tabular}
+\end{table}
+\begin{table}[ht]
+\centering
+\caption*{表2 \hspace{3em}卧式电桥法测量Cu50电阻随温度变化}
+\renewcommand\arraystretch{1.1}
+\begin{tabular}{C{4em}|*{10}{|C{2em}}}
+\multicolumn{11}{l}{电源电压$U_s=\underline{\hspace{2.5em}}\text{V}$，固定电阻$R_a=\underline{\hspace{2em}}\Omega$，$R_b=\underline{\hspace{2.5em}}\Omega$，$R_n=\underline{\hspace{2.5em}}\Omega$} \\
+	\hline
+	\hline
+	序号 & 1 & 2 & 3 & 4 & 5 & 6 & 7 & 8 & 9 & 10 \\
+	\hline
+	\hline
+	$t(^{\circ}\text{C})$ &  &  &  &  &  &  &  &  &  &  \\
+	\hline
+	$U(\text{mV})$ &  &  &  &  &  &  &  &  &  &  \\
+	\hline
+	$R_x(\Omega)$ &  &  &  &  &  &  &  &  &  &  \\
+	\hline
+	\hline
+\end{tabular}
+\end{table}
+\begin{table}[ht]
+\centering
+\caption*{表5 \hspace{3em}立式电桥法测量热敏电阻随温度变化}
+\renewcommand\arraystretch{1.1}
+\begin{tabular}{C{4em}|*{10}{|C{2em}}}
+\multicolumn{11}{l}{电源电压$U_s=\underline{\hspace{2.5em}}\text{V}$，固定电阻$R_a=\underline{\hspace{2em}}\Omega$，$R_b=\underline{\hspace{2.5em}}\Omega$，$R_n=\underline{\hspace{2.5em}}\Omega$} \\
+	\hline
+	\hline
+	序号 & 1 & 2 & 3 & 4 & 5 & 6 & 7 & 8 & 9 & 10 \\
+	\hline
+	\hline
+	$t(^{\circ}\text{C})$ &  &  &  &  &  &  &  &  &  &  \\
+	\hline
+	$U_0(\text{mV})$ &  &  &  &  &  &  &  &  &  &  \\
+	\hline
+	$R_x(\Omega)$ &  &  &  &  &  &  &  &  &  &  \\
+	\hline
+	$T(\text{K})$ &  &  &  &  &  &  &  &  &  &  \\
+	\hline
+	$1/T$ &  &  &  &  &  &  &  &  &  &  \\
+	\hline
+	$\ln R_x$ &  &  &  &  &  &  &  &  &  &  \\
+	\hline
+	\hline
+\end{tabular}
+\end{table}
+\begin{table}[ht]
+\centering
+\caption*{表3 \hspace{3em}交流电桥测量电容}
+\renewcommand\arraystretch{1.1}
+\begin{tabular}{C{6em}|C{6em}|C{6em}|C{6em}}
+\multicolumn{4}{l}{电桥电源$U=\underline{\hspace{3em}}\text{V}$，频率$f=\underline{\hspace{3em}}\text{kHz}$} \\
+	\hline
+	\hline
+	$R_a(\Omega)$ & $R_b(\Omega)$ & $C_n(\mu \text{F})$ & $R_n(\Omega)$ \\
+	\hline
+	\hline
+	 &  &  & \\
+	\hline
+	\hline
+\end{tabular}
+\end{table}
+\begin{table}[ht]
+\centering
+\caption*{表4 \hspace{3em}交流电桥测量电感}
+\renewcommand\arraystretch{1.1}
+\begin{tabular}{C{6em}|C{6em}|C{6em}|C{6em}}
+\multicolumn{4}{l}{电桥电源$U=\underline{\hspace{3em}}\text{V}$，频率$f=\underline{\hspace{3em}}\text{kHz}$} \\
+	\hline
+	\hline
+	$R_a(\Omega)$ & $R_b(\Omega)$ & $C_n(\mu \text{F})$ & $R_n(\Omega)$ \\
+	\hline
+	\hline
+	 &  &  & \\
+	\hline
+	\hline
+\end{tabular}
+\end{table}
+\end{document}

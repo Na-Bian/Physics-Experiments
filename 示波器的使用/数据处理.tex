@@ -1,0 +1,116 @@
+\documentclass{ctexart}
+\usepackage{geometry}
+\usepackage{caption}
+\usepackage{multirow}
+\usepackage{array}
+\newcolumntype{C}[1]{>{\centering\arraybackslash}p{#1}}
+\geometry{a4paper,left=1.5cm,right=1.5cm,top=2cm,bottom=2cm}
+\captionsetup[table]{labelsep=space,justification=centering}
+\begin{document}
+\begin{table}
+\centering
+\caption*{表1\hspace{3em}正弦信号电压与周期的测量数据}
+\renewcommand\arraystretch{1.1}
+\begin{tabular}{C{8em}|c||c|c|c|c||c|c}
+\hline
+\hline
+\multicolumn{2}{c||}{\multirow{2}{*}{函数信号发生器}} & \multicolumn{4}{c||}{\multirow{2}{*}{双踪模拟示波器}} &  \multicolumn{2}{c}{\multirow{2}{*}{测量计算值}} \\
+\multicolumn{2}{c||}{} & \multicolumn{4}{c||}{} & \multicolumn{2}{c}{} \\  
+\hline
+\multirow{2}{*}{\begin{tabular}[c]{@{}c@{}}频率\\$(kHz)$\end{tabular}} & \multirow{2}{*}{\begin{tabular}[c]{@{}c@{}}电压幅度\\$U_{p-p}(V)$\end{tabular}} & \multirow{2}{*}{\begin{tabular}[c]{@{}c@{}}垂直偏转系数\\$D_y(V/\mathrm{div})$\end{tabular}} & \multirow{2}{*}{\begin{tabular}[c]{@{}c@{}}$Y$\\$(\mathrm{div})$\end{tabular}} & \multirow{2}{*}{\begin{tabular}[c]{@{}c@{}}水平偏转系数\\$D_x(ms/\mathrm{div})$\end{tabular}} & \multirow{2}{*}{\begin{tabular}[c]{@{}c@{}}$X$\\$(\mathrm{div})$\end{tabular}} & \multirow{2}{*}{\begin{tabular}[c]{@{}c@{}}$V_{p-p}$\\$(V)$\end{tabular}} & \multirow{2}{*}{\begin{tabular}[c]{@{}c@{}}$T$\\$(ms)$\end{tabular}}\\
+& & & & & & & \\
+\hline
+& & & & & & & \\
+\hline
+& & & & & & & \\
+\hline
+& & & & & & & \\
+\hline
+\hline
+\end{tabular}
+\end{table}
+\begin{table}[ht]
+\centering
+\caption*{表2\hspace{3em}利用李萨如图测量未知信号的频率}
+\renewcommand\arraystretch{1.1}
+\begin{tabular}{c||C{8em}|C{8em}|C{8em}|C{8em}}
+    \hline
+    \hline
+    \multirow{4}{*}{\begin{tabular}[c]{@{}c@{}}李\\萨\\如\\图\end{tabular}} &  &  &  &  \\
+    &  &   &  &  \\
+    &  &   &  &  \\
+    &  &   &  &  \\
+    \hline
+    \hline
+    $N_x$ & & & &  \\
+    \hline
+    $N_y$ & & & &  \\
+    \hline
+    $f_x(Hz)$ & & & &  \\
+    \hline
+    $f_y(Hz)$ & & & &  \\
+    \hline
+    \hline
+\end{tabular}
+\end{table}
+\begin{table}[ht]
+\centering
+\caption*{表3 \hspace{3em}利用$CH1(X)$输入锯齿波测量未知信号的频率}
+\renewcommand\arraystretch{1.1}
+\begin{tabular}{c||C{8em}|C{8em}|C{8em}}
+	\hline
+	\hline
+	周期数$N$ & 1 & 2 & 3 \\
+	\hline
+	 \multirow{3}{*}{\begin{tabular}[c]{@{}c@{}}波\\形\\图\end{tabular}} &  &  &   \\
+	  &  &   &   \\
+ 	  &  &   &   \\
+	\hline
+	\hline
+	 \multirow{2}{*}{\begin{tabular}[c]{@{}c@{}}$f_x(Hz)$\\$(CH1(X))$\end{tabular}} &  &  &   \\
+	  &  &   &   \\
+	\hline
+	\multirow{2}{*}{\begin{tabular}[c]{@{}c@{}}$f_y(Hz)$\\$(CH2(Y))$\end{tabular}} &  &  &   \\
+	  &  &   &   \\
+	\hline
+	\hline
+\end{tabular}
+\end{table}
+\begin{table}[ht]
+\centering
+\caption*{表4 \hspace{3em}输入正弦波信号的频率和电阻两端输出电压的测量数据}
+\renewcommand\arraystretch{1.1}
+\begin{tabular}{C{8em}|c|C{3em}|C{5em}}
+\multicolumn{4}{l}{电容$C=0.05\mu F$，电阻$R=400\Omega$，输入电压的幅值$U=5.210V$} \\
+	\hline
+	\hline
+	\multirow{2}{*}{\begin{tabular}[c]{@{}c@{}}信号频率\\$(kHz)$\end{tabular}} & \multirow{2}{*}{\begin{tabular}[c]{@{}c@{}}垂直偏转系数\\$(mV/\mathrm{div})$\end{tabular}} & \multirow{2}{*}{\begin{tabular}[c]{@{}c@{}}$Y$\\$(\mathrm{div})$\end{tabular}} & \multirow{2}{*}{\begin{tabular}[c]{@{}c@{}}输出电压的幅值\\$(V)$\end{tabular}}  \\
+	 &  &  &  \\
+	\hline
+	\hline
+	&  &   &   \\
+	\hline
+ 	  &  &   &   \\
+	\hline
+ 	  &  &   &   \\
+	\hline
+ 	  &  &   &   \\
+	\hline
+ 	  &  &   &   \\
+	\hline
+ 	  &  &   &   \\
+	\hline
+ 	  &  &   &   \\
+	\hline
+ 	  &  &   &   \\
+	\hline
+ 	  &  &   &   \\
+	\hline
+ 	  &  &   &   \\
+	\hline
+ 	  &  &   &   \\
+	\hline
+	\hline
+\end{tabular}
+\end{table}
+\end{document}

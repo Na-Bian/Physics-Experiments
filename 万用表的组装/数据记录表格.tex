@@ -1,0 +1,110 @@
+\documentclass[UTF8,12pt]{ctexart}
+\usepackage{geometry}
+\usepackage{caption}
+\usepackage{multirow}
+\usepackage{array}
+\usepackage{amsmath}
+\newcolumntype{C}[1]{>{\centering\arraybackslash}p{#1}}
+\geometry{a4paper,left=1.5cm,right=1.5cm,top=2cm,bottom=2cm}
+\captionsetup[table]{labelsep=space,justification=centering}
+\setlength{\tabcolsep}{3pt}
+\begin{document}
+
+\begin{table}[ht]
+    \centering
+    \caption*{表1 \hspace{3em}直流电压的测量（200\,mV 量程校准）}
+    \renewcommand\arraystretch{1.1}
+    \begin{tabular}{C{6em}|*{11}{|C{2.5em}}}
+        \multicolumn{12}{l}{拨位开关$K_{1-2}$=ON（$R_{int}=47$\,k$\Omega$），$K_{2-3}$=ON}                          \\
+        \multicolumn{12}{l}{参考电压$V_{ref}=100$\,mV，量程$0\sim199.9$\,mV}                                        \\
+        \hline
+        \hline
+        序号                 & 1     & 2     & 3     & 4     & 5     & 6     & 7    & 8    & 9    & 10   & 11  \\
+        \hline
+        \hline
+        $U_{\text{设}}$(mV) & 199.9 & 180.0 & 160.0 & 140.0 & 120.0 & 100.0 & 80.0 & 60.0 & 40.0 & 20.0 & 0.0 \\
+        \hline
+        $U_{\text{测}}$(mV) &       &       &       &       &       &       &      &      &      &      &     \\
+        \hline
+        \hline
+    \end{tabular}
+\end{table}
+
+\begin{table}[ht]
+    \centering
+    \caption*{表2 \hspace{3em}直流电流的测量（20\,mA 量程校准）}
+    \renewcommand\arraystretch{1.1}
+    \begin{tabular}{C{6em}|*{11}{|C{2.5em}}}
+        \multicolumn{12}{l}{拨位开关$K_{1-2}$=ON（$R_{int}=47$\,k$\Omega$），$K_{2-2}$=ON}                                \\
+        \multicolumn{12}{l}{量程$0\sim19.99$\,mA}                                                                    \\
+        \hline
+        \hline
+        序号                 & 1     & 2     & 3     & 4     & 5     & 6     & 7     & 8     & 9     & 10    & 11    \\
+        \hline
+        \hline
+        $I_{\text{设}}$(mA) & 19.99 & 19.00 & 18.00 & 17.00 & 16.00 & 15.00 & 14.00 & 13.00 & 12.00 & 11.00 & 10.00 \\
+        \hline
+        $I_{\text{测}}$(mA) &       &       &       &       &       &       &       &       &       &       &       \\
+        \hline
+        \hline
+        序号                 & 12    & 13    & 14    & 15    & 16    & 17    & 18    & 19    & 20    & 21    &       \\
+        \hline
+        \hline
+        $I_{\text{设}}$(mA) & 9.00  & 8.00  & 7.00  & 6.00  & 5.00  & 4.00  & 3.00  & 2.00  & 1.00  & 0.00  &       \\
+        \hline
+        $I_{\text{测}}$(mA) &       &       &       &       &       &       &       &       &       &       &       \\
+        \hline
+        \hline
+    \end{tabular}
+\end{table}
+
+\begin{table}[ht]
+    \centering
+    \caption*{表3 \hspace{3em}电阻的测量（2\,k$\Omega$ 量程校准）}
+    \renewcommand\arraystretch{1.1}
+    \begin{tabular}{C{6em}|*{11}{|C{2.5em}}}
+        \multicolumn{12}{l}{拨位开关$K_{1-1}$=ON（$R_{int}=470$\,k$\Omega$），$K_{2-1}$=ON}                                      \\
+        \multicolumn{12}{l}{基准电压 1\,V，量程$0\sim1.999$\,k$\Omega$，校准值 1.500}                                                \\
+        \hline
+        \hline
+        序号                        & 1     & 2     & 3     & 4     & 5     & 6     & 7     & 8     & 9     & 10    & 11    \\
+        \hline
+        \hline
+        $R_{\text{设}}$(k$\Omega$) & 1.999 & 1.900 & 1.800 & 1.700 & 1.600 & 1.500 & 1.400 & 1.300 & 1.200 & 1.100 & 1.000 \\
+        \hline
+        $R_{\text{箱}}$(k$\Omega$) &       &       &       &       &       &       &       &       &       &       &       \\
+        \hline
+        \hline
+        序号                        & 12    & 13    & 14    & 15    & 16    & 17    & 18    & 19    & 20    & 21    &       \\
+        \hline
+        \hline
+        $R_{\text{设}}$(k$\Omega$) & 0.900 & 0.800 & 0.700 & 0.600 & 0.500 & 0.400 & 0.300 & 0.200 & 0.100 & 0.000 &       \\
+        \hline
+        $R_{\text{箱}}$(k$\Omega$) &       &       &       &       &       &       &       &       &       &       &       \\
+        \hline
+        \hline
+    \end{tabular}
+\end{table}
+
+\begin{table}[ht]
+    \centering
+    \caption*{表4 \hspace{3em}未知电阻 $R_x$ 的测量}
+    \renewcommand\arraystretch{1.1}
+    \begin{tabular}{C{9em}|C{5em}|C{5em}|C{5em}}
+        \multicolumn{4}{l}{$R_x$ 档量程$0\sim1.999$\,k$\Omega$}                         \\
+        \multicolumn{4}{l}{先用万用表测出 $R_x$，再调节 $R_{Wx}$ 使模块读数为$0\sim1.999$\,k$\Omega$} \\
+        \hline
+        \hline
+        测量次数                   & 1 & 2 & 3                                           \\
+        \hline
+        万用表测得 $R_x$($\Omega$)  &   &   &                                             \\
+        \hline
+        电位器 $R_{Wx}$($\Omega$) &   &   &                                             \\
+        \hline
+        模块显示读数($\Omega$)       &   &   &                                             \\
+        \hline
+        \hline
+    \end{tabular}
+\end{table}
+
+\end{document}

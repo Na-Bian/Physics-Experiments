@@ -1,0 +1,76 @@
+\documentclass[12pt]{ctexart}
+\usepackage{geometry}
+\usepackage{caption}
+\usepackage{multirow}
+\usepackage{amsmath}
+\usepackage{array}
+\newcolumntype{C}[1]{>{\centering\arraybackslash}p{#1}}
+\geometry{a4paper,left=1.5cm,right=1.5cm,top=2cm,bottom=2cm}
+\captionsetup[table]{labelsep=space,justification=centering}
+\begin{document}
+\begin{table}[ht]
+\centering
+\caption*{表1 \hspace{3em}$10\Omega$电阻的伏安特性}
+\renewcommand\arraystretch{1.1}
+\begin{tabular}{c||C{2.5em}|C{2.5em}|C{2.5em}|C{2.5em}|C{2.5em}|C{2.5em}|C{2.5em}|C{2.5em}|C{2.5em}|C{2.5em}}
+\multicolumn{11}{r}{电阻标称值\underline{\hspace{3em}}$\Omega$}\\
+\multicolumn{11}{l}{电压表等级\underline{\hspace{4em}}，量程\underline{\hspace{3em}}，mA表等级\underline{\hspace{3em}}，量程\underline{\hspace{4em}}，接法\underline{\hspace{4em}}} \\
+	\hline
+	\hline
+	电压（V）& & & & & & & & & & \\
+	\hline
+	电流（mA）& & & & & & & & & & \\
+	\hline
+	\hline
+\end{tabular}
+\end{table}
+\begin{table}[ht]
+\centering
+\caption*{表2 \hspace{3em}1k$\Omega$电阻的伏安特性}
+\renewcommand\arraystretch{1.1}
+\begin{tabular}{c||C{2.5em}|C{2.5em}|C{2.5em}|C{2.5em}|C{2.5em}|C{2.5em}|C{2.5em}|C{2.5em}|C{2.5em}|C{2.5em}}
+\multicolumn{11}{r}{电阻标称值\underline{\hspace{3em}}$\Omega$}\\
+\multicolumn{11}{l}{电压表等级\underline{\hspace{4em}}，量程\underline{\hspace{4em}}，mA表等级\underline{\hspace{3em}}，量程\underline{\hspace{4em}}，接法\underline{\hspace{4em}}} \\
+	\hline
+	\hline
+	电压（V）& & & & & & & & & & \\
+	\hline
+	电流（mA）& & & & & & & & & & \\
+	\hline
+	\hline
+\end{tabular}
+\end{table}
+\begin{table}[ht]
+\centering
+\caption*{表3 \hspace{3em}半导体二极管的正、反向伏安特性}
+\renewcommand\arraystretch{1.1}
+\begin{tabular}{C{3em}|c||C{2em}|C{2em}|C{2em}|C{2em}|C{2em}|C{2em}|C{2em}|C{2em}|C{2em}|C{2em}}
+\multicolumn{12}{l}{正向：电压表等级\underline{\hspace{4em}}，量程\underline{\hspace{4em}}，mA表等级\underline{\hspace{3em}}，量程\underline{\hspace{4em}}} \\
+\multicolumn{12}{l}{反向：电压表等级\underline{\hspace{4em}}，量程\underline{\hspace{4em}}，mA表等级\underline{\hspace{3em}}，量程\underline{\hspace{4em}}} \\
+	\hline
+	\hline
+	\multirow{2}{*}{\begin{tabular}[c]{@{}c@{}}正向\\ \underline{\hspace{2em}}接\end{tabular}} & 电压（V） &  &  &  &  &  &  &  &  &  &  \\ \cline{2-12} 
+                                                                & 电流（mA） &  &  &  &  &  &  &  &  &  &  \\ \hline
+\multirow{2}{*}{\begin{tabular}[c]{@{}c@{}}反向\\ \underline{\hspace{2em}}接\end{tabular}} & 电压（V） &  &  &  &  &  &  &  &  &  &  \\ \cline{2-12} 
+                                                                & 电流（mA） &  &  &  &  &  &  &  &  &  &  \\ \hline
+	\hline
+	\hline
+\end{tabular}
+\end{table}
+\begin{table}[ht]
+\centering
+\caption*{表4 \hspace{3em}测量晶体三极管的输出特性曲线}
+\renewcommand\arraystretch{1.2}
+\begin{tabular}{C{5em}|C{3em}|C{3em}|C{3em}|C{3em}|C{3em}|C{3em}|C{3em}|C{3em}}
+\multicolumn{9}{l}{电压表等级\underline{\hspace{4em}}，量程\underline{\hspace{4em}}，mA表等级\underline{\hspace{3em}}，量程\underline{\hspace{4em}}}\\
+\multicolumn{9}{l}{$\mu $A表等级\underline{\hspace{4em}}，量程\underline{\hspace{4em}}，$I_b$=\underline{\hspace{5em}}}\\
+	\hline
+	\hline
+	电压（V）& & & & & & & &  \\
+	\hline
+	电流（mA）& & & & & & & & \\
+	\hline
+	\hline
+\end{tabular}
+\end{table}
+\end{document}

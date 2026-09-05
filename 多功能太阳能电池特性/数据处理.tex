@@ -1,0 +1,118 @@
+\documentclass{ctexart}
+\usepackage{geometry}
+\usepackage{caption}
+\usepackage{multirow}
+\usepackage{array}
+\usepackage{amsmath}
+\newcolumntype{C}[1]{>{\centering\arraybackslash}p{#1}}
+\geometry{a4paper,left=1.5cm,right=1.5cm,top=2cm,bottom=2cm}
+\captionsetup[table]{labelsep=space,justification=centering}
+\begin{document}
+\begin{table}[ht]
+\centering
+\caption*{表1 \hspace{3em}太阳能电池输出伏安特性}
+\renewcommand\arraystretch{1.1}
+\begin{tabular}{C{6em}|*{8}{|C{2em}}}
+\hline
+\hline
+电压$V$(V) & 1 & 2 & 4 & 6 & 8 & 10 & 10.2 & 10.4 \\
+\hline
+\hline
+电流$I$(mA) &  &  &  &  &  &  &  \\
+\hline
+功率$P_0$(mW) &  &  &  &  &  &  &  \\
+\hline
+\hline
+电压$V$(V) & 10.6 & 10.8 & 11.0 & 11.2 & 11.4 & 11.6 & 11.8 & 12.0 \\
+\hline
+电流$I$(mA) &  &  &  &  &  &  &  \\
+\hline
+功率$P_0$(mW) &  &  &  &  &  &  &  \\
+\hline
+\hline
+\end{tabular}
+\end{table}
+\begin{table}[ht]
+\centering
+\caption*{表2 \hspace{3em}遮挡对太阳能电池输出的影响}
+\renewcommand\arraystretch{1.1}
+\begin{tabular}{C{7em}|C{3em}|C{5.5em}|C{5.5em}|C{5.5em}|C{3em}|C{3em}|C{3em}}
+\hline
+\hline
+遮挡条件 & 无遮挡 & \multicolumn{3}{c|}{纵向遮挡} & \multicolumn{3}{c}{横向遮挡}  \\
+\hline
+遮挡面积 & 0 & 1片（\(1/24\)） & 2片（\(1/12\)） & 4片（\(1/6\)） & 25\% & 50\% & 75\% \\
+\hline
+短路电流(mA) &  &  &  &  &  &  &  \\
+\hline
+\hline
+\end{tabular}
+\end{table}
+\begin{table}[ht]
+\centering
+\caption*{表3 \hspace{3em}两种充电情况下超级电容的充电特性}
+\renewcommand\arraystretch{1.1}
+\begin{tabular}{C{4em}||C{5.5em}|C{6.5em}|C{6.5em}|C{5.5em}|C{6.5em}|C{6.5em}}
+\hline
+\hline
+\multirow{2}{*}{\begin{tabular}[c]{@{}c@{}} 时间/min \end{tabular}} & \multicolumn{3}{c|}{直接对超级电容充电} & \multicolumn{3}{c}{加DC-DC后对超级电容充电} \\
+\cline{2-7}
+ & 充电电压/V & 充电电流/mA & 充电功率/mW & 充电电压/V & 充电电流/mA & 充电功率/mW \\
+\hline
+\hline
+0.0 &  &  &  &  &  & \\
+\hline
+1.0 &  &  &  &  &  & \\
+\hline
+2.0 &  &  &  &  &  & \\
+\hline
+3.0 &  &  &  &  &  & \\
+\hline
+4.0 &  &  &  &  &  & \\
+\hline
+5.0 &  &  &  &  &  & \\
+\hline
+6.0 &  &  &  &  &  & \\
+\hline
+7.0 &  &  &  &  &  & \\
+\hline
+8.0 &  &  &  &  &  & \\
+\hline
+9.0 &  &  &  &  &  & \\
+\hline
+\hline
+\end{tabular}
+\end{table}
+\begin{table}[ht]
+\centering
+\caption*{表4 \hspace{3em}太阳能电池直接带负载实验}
+\renewcommand\arraystretch{1.1}
+\begin{tabular}{C{6.5em}|C{6.5em}|C{6.5em}||C{6.5em}|C{6.5em}|C{6.5em}}
+\hline
+\hline
+\multicolumn{3}{c||}{并联超级电容前太阳能电池输出情况} & \multicolumn{3}{c}{并联超级电容后太阳能电池输出情况} \\
+\hline
+电压$U_1$/V & 电流$I_1$/mA & 功率$P_1$/mW & 电压$U_2$/V & 电流$I_2$/mA & 功率$P_2$/mW \\
+\hline
+ &  &  &  &  & \\
+\hline
+\hline
+\end{tabular}
+\end{table}
+\begin{table}[ht]
+\centering
+\caption*{表5 \hspace{3em}加DC-DC匹配电源电压与负载电压实验}
+\renewcommand\arraystretch{1.1}
+\begin{tabular}{C{6.5em}|C{6.5em}|C{6.5em}||C{6.5em}|C{6.5em}|C{6.5em}}
+\hline
+\hline
+\multicolumn{3}{c||}{加DC-DC前负载获得功率} & \multicolumn{3}{c}{加DC-DC后负载获得功率} \\
+\hline
+电压$U_1$/V & 电流$I_1$/mA & 功率$P_1$/mW & 电压$U_2$/V & 电流$I_2$/mA & 功率$P_2$/mW \\
+\hline
+ &  &  &  &  & \\
+\hline
+\hline
+\end{tabular}
+\end{table}
+\end{document}

@@ -1,0 +1,125 @@
+\documentclass{ctexart}
+\usepackage{geometry}
+\usepackage{caption}
+\usepackage{multirow}
+\usepackage{array}
+\usepackage{amsmath}
+\newcolumntype{C}[1]{>{\centering\arraybackslash}p{#1}}
+\geometry{a4paper,left=1.5cm,right=1.5cm,top=2cm,bottom=2cm}
+\captionsetup[table]{labelsep=space,justification=centering}
+\begin{document}
+\begin{table}[ht]
+\centering
+\caption*{表1 \hspace{3em}不同小球直径$d$的测量}
+\renewcommand\arraystretch{1.1}
+\begin{tabular}{C{3em}*{10}{|C{2em}}|C{6em}}
+\hline
+\hline
+\multirow{3}{*}{\begin{tabular}[c]{@{}c@{}}样品\\小球\end{tabular}} & \multicolumn{10}{c|}{测量次数} & \multirow{3}{*}{\begin{tabular}[c]{@{}c@{}}平均值\\$\bar{d}/$mm\end{tabular}} \\
+\cline{2-11}
+ & \multicolumn{2}{c|}{1} & \multicolumn{2}{c|}{2} & \multicolumn{2}{c|}{3} & \multicolumn{2}{c|}{4} & \multicolumn{2}{c|}{5} &  \\
+ \cline{2-11}
+ & $d_1$ & $d_2$ & $d_1$ & $d_2$ & $d_1$ & $d_2$ & $d_1$ & $d_2$ & $d_1$ & $d_2$ & \\
+\hline
+\hline
+$1^{\#}$ &  &  &  &  &  &  &  &  &  &  & \\
+\hline
+$2^{\#}$ &  &  &  &  &  &  &  &  &  &  & \\
+\hline
+$3^{\#}$ &  &  &  &  &  &  &  &  &  &  & \\
+\hline
+\hline
+\end{tabular}
+\end{table}
+\begin{table}[ht]
+\centering
+\caption*{表2 \hspace{3em}$1^{\#}$样品不同温度下速度的测定}
+\renewcommand\arraystretch{1.1}
+\begin{tabular}{C{2em}|C{3em}*{5}{|C{3em}}|C{5em}|C{5em}}
+\multicolumn{9}{l}{$\rho=7.8\times 10^3$kg/m$^3$，$\rho_0=0.95\times 10^3$kg/m$^3$，$D=2.0$cm，$g=9.794$ m/s$^2$，$L=\underline{\hspace{3em}}$cm} \\
+\hline
+\hline
+\multicolumn{2}{c|}{\multirow{2}{*}{\begin{tabular}[c]{@{}c@{}}温度\\ $T/{^\circ}$C\end{tabular}}} & \multicolumn{5}{c|}{时间$t/$s} & \multirow{2}{*}{\begin{tabular}[c]{@{}c@{}}平均值\\ $\bar{t}$/s\end{tabular}} &  \multirow{2}{*}{\begin{tabular}[c]{@{}c@{}}平均速度\\ $\bar{v_0}$/cm$\cdot$s$^{-1}$\end{tabular}}\\
+\cline{3-7}
+\multicolumn{2}{c|}{} & 1 & 2 & 3 & 4 & 5 &  & \\
+\hline
+\hline
+1  &  &  &  &  &  &  &  & \\
+\hline
+2  &  &  &  &  &  &  &  & \\
+\hline
+3  &  &  &  &  &  &  &  & \\
+\hline
+4  &  &  &  &  &  &  &  & \\
+\hline
+5  &  &  &  &  &  &  &  & \\
+\hline
+6  &  &  &  &  &  &  &  & \\
+\hline
+\hline
+\end{tabular}
+\end{table}
+\begin{table}[ht]
+\centering
+\caption*{表4 \hspace{3em}不同小球速度的测定}
+\renewcommand\arraystretch{1.1}
+\begin{tabular}{C{4em}|C{3em}*{5}{|C{4em}}|C{6em}}
+\multicolumn{8}{l}{$L=\underline{\hspace{3em}}$cm，$T=\underline{\hspace{3em}}^{\circ}$C} \\
+\hline
+\hline
+\multirow{2}{*}{\begin{tabular}[c]{@{}c@{}}样品\\ 小球\end{tabular}} & \multicolumn{5}{c|}{时间$t/$s} & \multirow{2}{*}{\begin{tabular}[c]{@{}c@{}}平均值\\ $\bar{t}$/s\end{tabular}} &  \multirow{2}{*}{\begin{tabular}[c]{@{}c@{}}平均速度\\ $\bar{v_0}$/cm$\cdot$s$^{-1}$\end{tabular}}\\
+\cline{2-6}
+ & 1 & 2 & 3 & 4 & 5 &  \\
+\hline
+\hline
+$1^{\#}$  &  &  &  &  &  &  &  \\
+\hline
+$2^{\#}$  &  &  &  &  &  &  &  \\
+\hline
+$3^{\#}$  &  &  &  &  &  &  &  \\
+\hline
+\hline
+\end{tabular}
+\end{table}
+\begin{table}[ht]
+\centering
+\caption*{表3 \hspace{3em}实验结果记录表（1$^{\#}$样品）}
+\renewcommand\arraystretch{1.1}
+\begin{tabular}{C{8em}|*{6}{|C{3.5em}}}
+\hline
+\hline
+温度$T/^{\circ}$C &  &  &  &  &  &  \\
+\hline
+$\bar{\eta}$/Pa$\cdot$s &  &  &  &  &  &  \\
+\hline
+Re &  &  &  &  &  &  \\
+\hline
+修正后的$\bar{\eta}$/Pa$\cdot$s &  &  &  &  &  &  \\
+\hline
+相对误差$E_r$/\% &  &  &  &  &  &  \\
+\hline
+\hline
+\end{tabular}
+\end{table}
+\begin{table}[ht]
+\centering
+\caption*{表5 \hspace{3em}拓展实验实验结果记录表}
+\renewcommand\arraystretch{1.1}
+\begin{tabular}{C{10em}|*{3}{|C{6em}}}
+\multicolumn{4}{l}{$T=\underline{\hspace{3em}}^{\circ}$C} \\
+\hline
+\hline
+样品小球 & 1$^{\#}$ & 2$^{\#}$ & 3$^{\#}$  \\
+\hline
+$\bar{\eta}$/Pa$\cdot$s &  &  &  \\
+\hline
+Re &  &  &  \\
+\hline
+修正后的$\bar{\eta}$/Pa$\cdot$s &  &  &  \\
+\hline
+相对误差$E_r$/\% &  &  &  \\
+\hline
+\hline
+\end{tabular}
+\end{table}
+\end{document}
